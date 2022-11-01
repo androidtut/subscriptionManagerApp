@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">subscriptionApp</string>
+    <string name="text">Subscription manager</string>
+    <string name="subtext">the best financial assistant for your subscriptions</string>
+</resources>

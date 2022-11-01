@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        app:cardElevation="30dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/cardcolor"
+            android:paddingLeft="10dp"
+            android:paddingVertical="30dp"
+            android:paddingRight="50dp"
+
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/topcardimage"
+                android:layout_width="70dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/dropbox"
+                android:layout_height="70dp"/>
+            <TextView
+                android:id="@+id/topcardtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/latobold"
+                android:layout_marginTop="5dp"
+                android:text="DropBox"
+                android:textColor="#fff"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/topprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/latobold"
+                android:layout_marginTop="30dp"
+                android:text="$8.00"
+                android:textColor="#fff"
+                android:textSize="33dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/months"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/latolight"
+                android:text="/months"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
