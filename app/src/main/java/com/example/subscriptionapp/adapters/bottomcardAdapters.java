@@ -1,6 +1,7 @@
 package com.example.subscriptionapp.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.subscriptionapp.DetailsActivity;
 import com.example.subscriptionapp.R;
 import com.example.subscriptionapp.models.carddatatop;
 
@@ -37,6 +39,11 @@ public class bottomcardAdapters extends RecyclerView.Adapter<bottomcardAdapters.
         holder.topimage.setImageResource(cards.getImage());
         holder.title.setText(cards.getTitle());
         holder.price.setText(cards.getPrice());
+
+        holder.itemView.setOnClickListener(v->{
+            Intent intent = new Intent(context, DetailsActivity.class);
+            context.startActivity(intent);
+        });
     }
 
     @Override

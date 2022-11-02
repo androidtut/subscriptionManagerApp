@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor"
+    tools:context=".DetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backbtn"
+                android:layout_width="40dp"
+                android:src="@drawable/back"
+                android:layout_height="40dp"/>
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/store"
+                android:layout_height="40dp"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginVertical="30dp"
+            android:layout_marginHorizontal="20dp"
+             android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/detailsimage"
+                android:layout_width="70dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/dropbox"
+                android:layout_height="70dp"/>
+            <TextView
+                android:id="@+id/detailstitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/latobold"
+                android:layout_marginTop="5dp"
+                android:text="DropBox"
+                android:textColor="#f1f1f1"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/detailsdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/latobold"
+                android:text="4 Desc"
+                android:textColor="#fff"
+                android:background="@color/cardcolor"
+                android:paddingVertical="20dp"
+                android:paddingHorizontal="70dp"
+                android:layout_marginTop="20dp"
+                android:textSize="33dp"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_margin="20dp"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:id="@+id/transc"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/latobold"
+           android:layout_marginTop="5dp"
+           android:text="Transaction"
+           android:textColor="#f1f1f1"
+           android:textSize="24dp"
+           android:textStyle="bold"
+           />
+
+       <TextView
+           android:id="@+id/viewmore"
+           android:layout_alignParentRight="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:fontFamily="@font/latolight"
+           android:layout_marginTop="5dp"
+           android:text="View more"
+           android:textColor="#673AB7"
+           android:textSize="24dp"
+           android:textStyle="bold"
+           />
+
+   </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/analytic"
+            android:scaleType="fitXY"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingVertical="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bottom_style"
+            android:paddingHorizontal="13dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/recent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/latobold"
+                android:text="History"
+                android:textColor="#000"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/uniquebottomdata"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
